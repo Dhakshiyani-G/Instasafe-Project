@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Dropdown</title>
+    <link rel="stylesheet" href="custom-dropdown.css" />
+    <script src="custom-dropdown.js" defer></script>
+  </head>
+  <body>
+    <div>
+      <img
+        class="logo"
+        src="../src/assets/instasafe-logo.jpg"
+        alt="Instasafe Logo"
+      />
+      <hr />
+      <div class="main-container">
+        <div class="container">
+          <label class="header"><u>Instasafe Products</u></label>
+          <br /><br /><br />
+          <label class="label">Select an Instasafe Product:</label>
+          <br /><br />
+          <select name="products" class="select">
+            <option value="">--Please choose an option--</option>
+            <option value="1">Zero Trust Application Access</option>
+            <option value="2">Zero Trust Network Access</option>
+            <option value="3">Multi-Factor Authentication</option>
+            <option value="4">Enterprise Secure Browser</option>
+            <option value="5">Secure Identity Cloud</option>
+          </select>
+        </div>
+        <div class="container">
+          <label class="header"><u>Temperature Converter</u></label>
+          <br /><br /><br />
+          <label class="label1">Enter the value:</label>
+          <input
+            class="input"
+            id="valueInput"
+            type="number"
+            maxlength="2"
+            required
+          />
+          <br /><br />
+          <label class="label1">From:</label>
+          <select id="fromUnit" class="select1" required>
+            <option value="">--Please choose an unit--</option>
+            <option value="Celsius">Celsius</option>
+            <option value="Fahrenheit">Fahrenheit</option>
+            <option value="3">Kelvin</option>
+          </select>
+          <label class="label1">To:</label>
+          <select id="toUnit" class="select1" required>
+            <option value="">--Please choose an unit--</option>
+            <option value="Celsius">Celsius</option>
+            <option value="Fahrenheit">Fahrenheit</option>
+            <option value="Kelvin">Kelvin</option>
+          </select>
+          <br /><br />
+          <button id="convertButton">Convert</button>
+          <label class="label2" id="resultLabel"></label>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
